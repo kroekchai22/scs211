@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="container-fluid">
+    <!-- As a nav -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- nav -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>ประกาศ!!!</strong> ร้านจะหยุดในวันที่ 31 ธ.ค.65 - 31 ธ.ค.66
+      Happy New Year...
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+    <!-- breadcrumb -->
+    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          หมวดหมู่สินค้า
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">ซื้อสินค้า</li>
+      </ol>
+    </nav>
+    <!-- carousal -->
+    <div class="row">
+      <div class="col lg-6 mb-3">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://รถบ้านเจ้าของขายเอง.net/image/image-ads/medium/car_image120221125025816.jpg"
+                class="d-block w-100"
+                alt="..."z
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://image.bestreview.asia/wp-content/uploads/2022/09/Lenovo-LP40-Pro-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://รถบ้านเจ้าของขายเอง.net/image/image-ads/medium/car_image120221125025816.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- badge -->
+
+      <div class="col mb-5">
+        <h6>อะไหล่รถยนต์<span class="badge bg-secondary">New</span></h6>
+
+        <!-- star -->
+        <div class="row">
+          <div class="col-lg-8 mb-5">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            4.5
+          </div>
+          <div class="col-lg-4 mb-5">
+            <i class="bi bi-share-fill"></i>
+            <i class="bi bi-heart"></i>
+          </div>
+          <div class="row">
+            <div class="col-lg-8"><a href="#">หมวดหมู่สินค้า</a></div>
+
+            <div class="col-lg-4 mb-5">
+              <h6>ฟรีค่าส่ง</h6>
+            </div>
+            <hr />
+            <div class="col-lg-8">
+              <h4>฿5000-100000 บาท</h4>
+            </div>
+            <!-- Button trigger modal กดดูข้อมูล -->
+            <div class="col-lg-4 mb-5">
+              <button
+                type="button"
+                class="btn btn-link"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                ชื่อร้านค้า
+              </button>
+              <!-- Button trigger modal เป็นรายละเอียด -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Lenovo Lp40 PRO หูฟังบูทูธไร้สาย
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">สั่งได้ตลอดทั้งวัน</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Understood
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ปิด Button จะเริ่มทำtrigger modal -->
+
+          <div class="row">
+            <div class="col-lg-8">
+              <label type="col-sm-2 col-form-label">จำนวน</label>
+              <div class="btn-group mb-4">
+                <button
+                  class="btn btn-primary"
+                  type="input-quantity"
+                  id="button-addon1"
+                >
+                  -
+                </button>
+                <button
+                  class="btn btn-primary"
+                  type="input-quantity"
+                  id="button-addon1"
+                >
+                  1
+                </button>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  id="button-addon1"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon1"
+            >
+              ใส่ตะกร้าสินค้า
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8"><h2>Product Details</h2></div>
+
+        <div class="col-lg-4">
+          <div class="col-lg-8"><h2>Sponsor Product</h2></div>
+        </div>
+      </div>
+      <!--acccodian-->
+      <div class="row">
+        <div class="col lg-9">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  รายละเอียด
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="col">
+                    <div class="py-1 my-1 bg-warning container">
+                      <h3>รายละเอียดสินค้า</h3>
+                    </div>
+                    อะไหล่รถยนต์ราคาจับต้องได้มีอะไหล่เกือบทุกชนิด
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  คุณสมบัตสินค้า
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="col">
+                    <div class="py-1 my-1 bg-warning container">
+                      <h3>คุณสมบัตรสินค้า</h3>
+                    </div>
+                    <li>เครื่องยนต์ EJ20 ของทาง Subaru</li>
+                    <li>ล้อแม็ก VOSSEN</li>
+                    <li>หลอดซีนอน</li>
+                    <li>อื่นๆ</li>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  ตารางค่าจัดส่ง
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>                        
+                        <th scope="col">จำนวน</th>
+                        <th scope="col">ค่าจัดส่ง</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>อะไหล่รถยนต์</td>
+                        <td>5000-100000</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>                        
+                        <td>ฟรีค่าส่ง</td>
+                      </tr>                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card-->
+
+        <div class="col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src=data:image/jpeg;base64,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
+                class="d-block w-100"
+                alt="..."
+              />
+
+              <p class="card-text"></p>
+              ชื่อสินค้า
+
+              <p>฿ 5000-100000 บาท</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
